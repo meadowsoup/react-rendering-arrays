@@ -63,16 +63,16 @@ function App() {
         ]
       }
     ]
-  })
+  });
 
   return (
     <div>
       <h1>Student Scores</h1>
       {learnerData.learners.maps((learner, index) => (
-        <Learner />
+        <Learner key={index} learner={learner} />
       ))}
     </div>
-  )
+  );
 }
 
 export default App
