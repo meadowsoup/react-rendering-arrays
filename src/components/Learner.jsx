@@ -1,4 +1,4 @@
-
+import Score from "./Score";
 
 
 
