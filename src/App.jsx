@@ -69,7 +69,7 @@ function App() {
   return (
     <div>
       <h1>Student Scores</h1>
-      {learnerData.learners.maps((learner, index) => (
+      {learnerData.learners.map((learner, index) => (
         <Learner key={index} learner={learner} />
       ))}
     </div>
