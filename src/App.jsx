@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import Learner from './components/Learner';
-import './App.css'
+// import './App.css'
 
 function App() {
   const [learnerData, setLearnerData] = useState({
