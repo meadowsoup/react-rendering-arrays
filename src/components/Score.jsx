@@ -1,11 +1,11 @@
 
 
 
-function Score() {
+function Score({ score }) {
      return (
-          <p>
-               <strong>Date:</strong> {Score.date} | <strong>Score:</strong> {Score.score}
-          </p>
+          <li className="score-box">
+               <strong>Date:</strong> {score.date} | <strong>Score:</strong> {score.score}
+          </li>
      );
 }
 

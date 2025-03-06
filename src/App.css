@@ -1,16 +1,14 @@
 .ghost-container {
-  background: rgba(255, 255, 255, 0.1); /* See-through ghostly box */
+  background: rgba(255, 255, 255, 0.1); /* Ghostly transparency */
   padding: 20px;
   margin: 20px auto;
   border-radius: 15px;
   max-width: 500px;
   box-shadow: 0 0 15px #00ffcc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.score-box {
-  border: 1px solid #ffcc00;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+.ghost-container:hover {
+  transform: scale(1.05); /* Slight ghostly float effect */
+  box-shadow: 0 0 25px #4ef037; /* Glow gets stronger on hover */
 }

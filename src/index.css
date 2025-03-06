@@ -5,9 +5,41 @@ body {
   text-align: center;
 }
 
+@keyframes flicker {
+  0% { opacity: 1; }
+  20% { opacity: 0.8; }
+  40% { opacity: 1; }
+  60% { opacity: 0.9; }
+  80% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.score-box {
+  border: 1px solid #ffcc00;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.score-box:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px #ffcc00;
+  transform: scale(1.1);
+}
+
 h1 {
   font-size: 2rem;
   text-shadow: 0 0 10px #00ffcc; /* Glowing effect */
+  animation: flicker 2s infinite alternate;
 }
 
 h2 {
